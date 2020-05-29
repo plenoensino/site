@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+}
+
+body{
+    background-color: #f1f1f1;
+    background-color: #ff471a;
+}
+
+@keyframes move{
+    from {
+        opacity: 0;
+        transform: translateX(40%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    position: fixed;
+    z-index: 2;
+    background: #cc2900;
+}
+
+header img{
+    width: 120px;
+    padding: 0 36px;
+    cursor: pointer;
+    animation: move 1600ms;
+    animation-delay: 150ms;
+    animation-fill-mode: backwards;
+}
+
+header nav{
+    width: 100%;
+}
+
+header nav ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+    padding: 10px;
+    border: none;
+    border: 1px solid #cc2900;
+    display: block;
+
+    animation: move 1600ms;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+}
+
+header nav ul li a:hover{
+    color: #bbb;
+} 
+
+nav ul li a.contact{
+    border: 1px solid #f1f1f1;
+}
+
+nav ul li a.contact:hover{
+    background-color: #f1f1f1;
+    color: #cc2900;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+main .initial-content{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff471a;
+}
+
+main .initial-content .animation{
+    width: 800px; 
+    height: 700px;
+}
+
+main .initial-content .text{
+    width: 400px;
+    padding: 0 80px;
+}
+
+main div span{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #f1f1f1;
+    text-align: right;
+}
+
+main div span div:nth-child(1){
+    animation: move 1600ms;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+}
+
+main div span div:nth-child(2){
+    animation: move 1600ms;
+    animation-delay: 300ms;
+    animation-fill-mode: backwards;
+}
+
+main div span div:nth-child(3){
+    animation: move 1600ms;
+    animation-delay: 350ms;
+    animation-fill-mode: backwards;
+}
+
+main div span div:nth-child(4){
+    animation: move 1600ms;
+    animation-delay: 400ms;
+    animation-fill-mode: backwards;
+}
+
+main div span div:nth-child(5){
+    animation: move 1600ms;
+    animation-delay: 450ms;
+    animation-fill-mode: backwards;
+}
+
+main div span div:nth-child(6){
+    animation: move 1600ms;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+}
+
+main div span div:nth-child(7){
+    animation: move 1600ms;
+    animation-delay: 550ms;
+    animation-fill-mode: backwards;
+}
+
+.method{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+    background-color: #cc2900;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    position: relative;
+}
+
+.method h1{
+    font-size: 36px;
+    color: #f1f1f1;
+    margin-top: 45px;
+}
+
+.method div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.method div p{
+    width: 800px;
+    font-size: 22px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.method div .method-animation{
+    width: 80%;
+    
+}
+
+.method div .method-animation .animation{
+    width: 100%;
+    margin-left: 80px;
+}
+
+.carrousel {
+    background-color: #f1f1f1;
+    text-align: center;
+    height: 500px;
+    max-width: 1000px;
+    margin: auto;
+    top: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 20px 10px 5px #cc3000;
+}
+
+.carrousel:hover{
+    transition: 0.4s;
+    box-shadow: 10px 10px 5px #cc3000;
+}
+
+.carrousel span {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #0b0b0b;
+    background: none;
+    font-weight: bold;
+}
+
+.carrousel .slides {
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding-top: 0px;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+}
+
+.carrousel .slides li {
+    width: 25%;
+    padding: 40px;
+    height: 500px;
+    position: relative;
+    float: left;
+    background-color: #f1f1f1;
+}
+
+.carrousel .slides li .content-card{
+    width: 500px;
+    margin-bottom: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carrousel .slides li .content-card span{
+    font-family: 'Roboto', sans-serif;
+}
+
+.carrousel .slides li .content-card span.move{
+    animation: move 1600ms;
+    animation-delay: 740ms;
+    animation-fill-mode: backwards;
+}
+
+.carrousel .slides li .content-card div{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.carrousel .slides li .content-card div a{
+    text-decoration: none;
+    color: #ff4a11;
+    font-weight: bold;
+}
+
+.carrousel .slides li .content-card div a:hover{
+    text-decoration: underline;
+}
+
+.carrousel .slides .slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.carrousel li div{
+    margin-top: 0;  
+}
+
+.carrousel .slidesNavigation {
+    display: block;
+    list-style: none;
+    text-align: center;
+    bottom: 1em;
+    position: absolute; 
+    width: 104px;
+    left: 50%;
+    margin-left: -52px;
+}
+
+.carrousel input {
+    display: none;
+}
+
+.carrousel .slidesNavigation label {
+    float: left;
+    margin: 3px;
+    display: block;
+    height: 15px;
+    width: 15px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 2px #ff4a11;
+    font-size: 0;
+}
+ 
+#radio-1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#radio-2:checked ~ .slides {
+    transform: translateX(-25%);
+}
+
+#radio-3:checked ~ .slides {
+    transform: translateX(-50%);
+}
+
+#radio-4:checked ~ .slides {
+    transform: translateX(-75%);
+}
+
+.carrousel .slidesNavigation label:hover {
+    cursor: pointer;
+}
+
+.carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+.carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+    background: #ff4a11;
+}
+
+.content-card .animation{
+    width: 400px;
+    margin-left: 50px;
+}
+
+.content-card .animation .pc{
+    width: 500px;
+}
+
+footer{
+    position: relative;
+    margin-top: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    font-family: 'Roboto', sans-serif;
+    color: #f1f1f1;
+    background-color: #cc2900;
+}
+
+footer h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+footer a.contact{
+    margin-top: 60px;
+    border: 1px solid #f1f1f1;
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+    color: #f1f1f1;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+footer a.contact:hover{
+    background-color: #f1f1f1;
+    color: #ff4a11;
+}
+
+footer div.social{
+    margin-top: 30px;
+    color: #f1f1f1;
+}
+
+footer div.social a{
+    color: #f1f1f1;
+    font-size: 28px;
+    margin: 20px;
+}
+
+
+
+@media(max-width: 950px){
+    nav{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three{
+        background: #f1f1f1;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    .menu-section.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #cc2900;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .menu-section.on nav{
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle{
+        position: absolute;
+        right: 55px;
+        top: 15px;
+    }
+
+    .menu-section.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(8px, -10px);
+    }
+
+    .menu-section.on nav ul li{
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul li a{
+        transition-duration: 0.5s;
+        font-size: 16px;
+        line-height: 2rem;
+        display: block;
+    }
+
+    main .animation{
+        width: 400px; 
+        height: 350px;
+    }
+
+    main div span{
+        font-size: 26px;
+    }
+}
